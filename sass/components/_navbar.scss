@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  color: white;
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    li {
+      margin: 7px;
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+ }
+}
+#title {
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid tomato;
+  color: white;
+  #name {
+    font-size: 72px;
+    font-family: Playfair Display;
+    letter-spacing: 7px;
+  }
+}
