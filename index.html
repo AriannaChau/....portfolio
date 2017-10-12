@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="sass/output.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400,700" rel="stylesheet">
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title></title>
   </head>
@@ -11,22 +11,67 @@
       <nav>
         <ul id="left">
           <li><img src="images/logo.png" id="logo"></img></li>
-          <li>About</li>
-          <li>Work</li>
-          <li>Contact</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <ul id="socials">
-          <li><img src="images/twitter.png"></img></li>
-          <li><img src="images/github.png"></img></li>
-          <li><img src="images/linkedin.png"></img></li>
-          <li><img src="images/instagram.png"></img></li>
+          <li><a href="https://twitter.com/vulpixies" target="_blank"><img src="images/twitter.png"></a></li>
+          <li><a href="https://github.com/AriannaChau" target="_blank"><img src="images/github.png"></a></li>
+          <li><a href="https://www.linkedin.com/in/ariannachau/" target="_blank"><img src="images/linkedin.png"></a></li>
+          <li><a href="https://www.instagram.com/vulpixies/" target="_blank"><img src="images/instagram.png"></a></li>
         </ul>
       </nav>
       <div id="title">
         <p>Hello, I'm
-          <br><span id="name">Arianna Chau</span>.
+          <br><span id="name">Arianna Chau</span>
           <br>I am a UX/UI designer and front end web developer.</p>
       </div>
     </div>
+    <div class="about">
+      <div class="test">
+        <h1>About</h1>
+        <p>Hello, and welcome. My name is Arianna, I am a front end developer and UX/UI designer. I was born and raised in the one and only City of Roses. I love to create, problem solve, and ask why. I favor clean and minimalist websites with gentle and neutral colors with layering that achieve levels of depth. I’m all about growing, challenging myself and lifting up/encouraging those around me.
+        Oh, and my dogs, I’m all about my dogs.
+
+      </div>
+      <div class="image">
+        <img src="images/me.jpg">
+      </div>
+    </div>
+    <div class="new-section">
+      <h1>Sample Works</h1>
+      <div class="works">
+        <div class="sample-works">
+          <div class="sample">
+          </div>
+          <div class="sample">
+          </div>
+          <div class="sample">
+          </div>
+          <div class="sample">
+          </div>
+          <div class="sample">
+          </div>
+          <div class="sample">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <h1>Let's Work Together</h1>
+      <p>I am always looking for new opportunies to make great things.
+        <br>I look forward to hearing from you!</p>
+    </div>
+    <div class="form-body">
+      <form action="https://formspree.io/ariannapikachau@gmail.com"
+      method="POST">
+      <input type="text" name="name" placeholder="first name">
+      <input type="text" name="name" placeholder="last name">
+      <input type="email" name="_replyto" placeholder="email">
+      <textarea name="message" placeholder="message" id="message"></textarea>
+      <input type="submit" value="Send" id="button">
+    </form>
+  </div>
   </body>
 </html>

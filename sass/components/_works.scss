@@ -1,0 +1,23 @@
+.new-section {
+  h1 {
+  margin-left: 50px;
+  margin-top: 200px;
+  }
+}
+.works {
+  // border: 1px solid tomato;
+  display: flex;
+  margin-top: 60px;
+  .sample-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .sample {
+      margin: 40px;
+      height: 200px;
+      width: 300px;
+      background-color: mistyrose;
+      border: 1px solid turquoise;
+    }
+  }
+}

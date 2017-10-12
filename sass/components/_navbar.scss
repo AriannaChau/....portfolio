@@ -1,14 +1,25 @@
+body {
+  letter-spacing: $space;
+}
 nav {
   display: flex;
   justify-content: space-between;
   height: 10vh;
   color: white;
-  ul {
+  ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     li {
-      margin: 7px;
+      margin: 10px;
+      a {
+        color: white;
+        display: inline-block;
+        transition: all .3s ease-out;
+        &:hover {
+          transform:translate(0px,-3px);
+          }
+      }
       img {
         height: 40px;
         width: 40px;
@@ -16,16 +27,17 @@ nav {
     }
  }
 }
+
 #title {
   display: flex;
-  height: 85vh;
-  justify-content: center;
+  height: 70vh;
+  justify-content: space-around;
   align-items: center;
-  border: 1px solid tomato;
   color: white;
+
   #name {
-    font-size: 72px;
-    font-family: Playfair Display;
+    font-size: 90px;
+    font-family: $title;
     letter-spacing: 7px;
   }
 }

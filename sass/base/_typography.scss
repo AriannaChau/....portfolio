@@ -1,3 +1,12 @@
-body {
+*, body {
   font-family: Raleway;
+  font-weight: 300;
+  a{
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-family: $title;
 }
