@@ -94,6 +94,7 @@ img {
   height: 55vh; }
 
 .about {
+  margin-top: 150px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -129,7 +130,7 @@ img {
   .contact h1 {
     margin-top: 100px; }
   .contact p {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center; }
 
 input, #message {
@@ -146,24 +147,34 @@ input, #message {
 
 #message {
   border: 1px solid #505050;
-  height: 200px; }
+  max-width: 500px;
+  min-width: 500px;
+  min-height: 200px; }
 
 .form-body {
   height: 58em;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: -50px; }
 
 #button {
   width: 130px;
   height: 60px;
+  border: none;
+  background-color: #37422C;
+  color: white;
   letter-spacing: 2px;
   margin: 0 auto;
   margin-top: -30px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: .3s all ease-in-out; }
+  #button:hover {
+    background-color: #C4CEA7;
+    color: #505050; }
 
 #hero {
   background-image: url(../images/hero.jpg);

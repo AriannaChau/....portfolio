@@ -6,7 +6,7 @@
     margin-top: 100px;
   }
   p {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
   }
 }
@@ -27,7 +27,9 @@ input {
 #message {
   @extend input;
   border: 1px solid #505050;
-  height: 200px;
+  max-width: 500px;
+  min-width: 500px;
+  min-height: 200px;
 }
 .form-body {
   height: 58em;
@@ -35,15 +37,24 @@ input {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: -50px;
 }
 
 #button {
   width: 130px;
   height: 60px;
+  border: none;
+  background-color: #37422C;
+  color: white;
   letter-spacing: $space;
   margin: 0 auto;
   margin-top: -30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .3s all ease-in-out;
+  &:hover {
+    background-color: #C4CEA7;
+    color: #505050;
+  }
 }
