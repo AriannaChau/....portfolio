@@ -62,7 +62,11 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 10vh;
-  color: white; }
+  color: white;
+  border: 1px solid red;
+  flex-wrap: wrap; }
+  nav #socials {
+    border: 1px solid blue; }
   nav ul {
     display: flex;
     flex-direction: row;

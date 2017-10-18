@@ -6,6 +6,11 @@ nav {
   justify-content: space-between;
   height: 10vh;
   color: white;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  #socials {
+    border: 1px solid blue;
+  }
   ul{
     display: flex;
     flex-direction: row;
@@ -25,7 +30,7 @@ nav {
         width: 40px;
       }
     }
- }
+  }
 }
 
 #title {
