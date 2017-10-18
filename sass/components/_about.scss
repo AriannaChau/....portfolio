@@ -1,17 +1,24 @@
 img {
-  height: 55vh;
+  width: 500px;
+  @include mobileBreakpoint {
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: -90px;
+  }
 }
 
 .about {
-  // border: 1px solid thistle;
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  flex-grow: 1;
+  // border: 1px solid thistle;
   .test {
-    width: 50%;
     line-height: 30px;
+    width: 55%;
+    @include mobileBreakpoint {
+      width: 90%;
+    }
     h1  {
       margin-bottom: 35px;
     }

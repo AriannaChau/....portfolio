@@ -91,17 +91,24 @@ nav {
     letter-spacing: 7px; }
 
 img {
-  height: 55vh; }
+  width: 500px; }
+  @media only screen and (max-width: 500px) {
+    img {
+      width: 350px;
+      margin-top: 20px;
+      margin-bottom: -90px; } }
 
 .about {
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  flex-grow: 1; }
+  flex-wrap: wrap; }
   .about .test {
-    width: 50%;
-    line-height: 30px; }
+    line-height: 30px;
+    width: 55%; }
+    @media only screen and (max-width: 500px) {
+      .about .test {
+        width: 90%; } }
     .about .test h1 {
       margin-bottom: 35px; }
 
@@ -168,8 +175,7 @@ input, #message {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: -50px;
-  border: 1px solid red; }
+  margin-top: -50px; }
 
 #button {
   width: 130px;
