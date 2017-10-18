@@ -116,12 +116,17 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+    .works .sample-works img {
+      width: 100%;
+      height: 100%;
+      transition: .3s all ease-in-out; }
+      .works .sample-works img:hover {
+        transform: translate(-10px, -10px); }
     .works .sample-works .sample {
       margin: 40px;
-      height: 200px;
-      width: 300px;
-      background-color: mistyrose;
-      border: 1px solid turquoise; }
+      height: 250px;
+      width: 305px;
+      background-color: #C4CEA7; }
 
 .contact {
   display: flex;
@@ -144,12 +149,18 @@ input, #message {
   margin: 100px; }
   input:focus, #message:focus {
     outline: none; }
+  @media only screen and (max-width: 500px) {
+    input, #message {
+      width: 300px; } }
 
 #message {
   border: 1px solid #505050;
   max-width: 500px;
-  min-width: 500px;
-  min-height: 200px; }
+  resize: none;
+  min-height: 150px; }
+  @media only screen and (max-width: 500px) {
+    #message {
+      margin: 0 auto; } }
 
 .form-body {
   height: 58em;
@@ -157,7 +168,8 @@ input, #message {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: -50px; }
+  margin-top: -50px;
+  border: 1px solid red; }
 
 #button {
   width: 130px;
@@ -175,6 +187,9 @@ input, #message {
   #button:hover {
     background-color: #C4CEA7;
     color: #505050; }
+  @media only screen and (max-width: 500px) {
+    #button {
+      margin-top: 50px; } }
 
 #hero {
   background-image: url(../images/hero.jpg);

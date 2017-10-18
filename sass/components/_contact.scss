@@ -23,14 +23,21 @@ input {
   &:focus {
     outline: none;
   }
+  @include mobileBreakpoint {
+    width: 300px;
+  }
 }
 #message {
   @extend input;
   border: 1px solid #505050;
   max-width: 500px;
-  min-width: 500px;
-  min-height: 200px;
+  resize: none;
+  min-height: 150px;
+  @include mobileBreakpoint {
+    margin: 0 auto;
+  }
 }
+
 .form-body {
   height: 58em;
   display: flex;
@@ -38,6 +45,7 @@ input {
   align-items: center;
   flex-wrap: wrap;
   margin-top: -50px;
+  border: 1px solid red;
 }
 
 #button {
@@ -56,5 +64,8 @@ input {
   &:hover {
     background-color: #C4CEA7;
     color: #505050;
+  }
+  @include mobileBreakpoint {
+    margin-top: 50px;
   }
 }
