@@ -1,11 +1,10 @@
 .new-section {
   h1 {
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 200px;
   }
 }
 .works {
-  // border: 1px solid tomato;
   display: flex;
   margin-top: 60px;
   .sample-works {
@@ -17,14 +16,14 @@
       height: 100%;
       transition: .3s all ease-in-out;
       &:hover {
-        transform: translate(-10px,-10px);
+        transform: translate(-5px,-5px);
+        box-shadow: 10px 10px 5px #C4CEA7;
       }
     }
     .sample {
       margin: 40px;
       height: 250px;
       width: 305px;
-      background-color: #C4CEA7;
     }
   }
 }

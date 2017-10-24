@@ -56,32 +56,44 @@ h1 {
   font-family: Playfair Display; }
 
 body {
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  overflow-x: hidden; }
+
+.logo {
+  background-image: url(../images/logo.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 nav {
   display: flex;
   justify-content: space-between;
   height: 10vh;
   color: white;
-  border: 1px solid red;
   flex-wrap: wrap; }
-  nav #socials {
-    border: 1px solid blue; }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    nav ul li {
-      margin: 10px; }
-      nav ul li a {
-        color: white;
-        display: inline-block;
-        transition: all .3s ease-out; }
-        nav ul li a:hover {
-          transform: translate(0px, -3px); }
-      nav ul li img {
-        height: 40px;
-        width: 40px; }
+
+@media only screen and (max-width: 500px) {
+  #socials {
+    position: absolute;
+    top: 52%;
+    left: -10px; } }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  ul li {
+    margin: 10px; }
+    ul li a {
+      color: white;
+      display: inline-block;
+      transition: all .5s ease-out; }
+      ul li a:hover {
+        transform: translate(0px, -3px); }
+    ul li img {
+      height: 40px;
+      width: 40px; }
 
 #title {
   display: flex;
@@ -117,7 +129,7 @@ img {
       margin-bottom: 35px; }
 
 .new-section h1 {
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 200px; }
 
 .works {
@@ -132,12 +144,12 @@ img {
       height: 100%;
       transition: .3s all ease-in-out; }
       .works .sample-works img:hover {
-        transform: translate(-10px, -10px); }
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px 5px #C4CEA7; }
     .works .sample-works .sample {
       margin: 40px;
       height: 250px;
-      width: 305px;
-      background-color: #C4CEA7; }
+      width: 305px; }
 
 .contact {
   display: flex;

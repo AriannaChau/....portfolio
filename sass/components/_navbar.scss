@@ -1,17 +1,31 @@
 body {
   letter-spacing: $space;
+  overflow-x: hidden;
 }
+
+.logo {
+  background-image: url(../images/logo.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   height: 10vh;
   color: white;
-  border: 1px solid red;
   flex-wrap: wrap;
-  #socials {
-    border: 1px solid blue;
   }
-  ul{
+  #socials {
+    @include mobileBreakpoint {
+      position: absolute;
+      top: 52%;
+      left: -10px;
+    }
+  }
+  ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,9 +34,9 @@ nav {
       a {
         color: white;
         display: inline-block;
-        transition: all .3s ease-out;
+        transition: all .5s ease-out;
         &:hover {
-          transform:translate(0px,-3px);
+          transform: translate(0px,-3px);
           }
       }
       img {
@@ -31,7 +45,6 @@ nav {
       }
     }
   }
-}
 
 #title {
   display: flex;
