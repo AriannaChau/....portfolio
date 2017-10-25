@@ -15,7 +15,7 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 10vh;
-  color: white;
+  // color: #505050;
   flex-wrap: wrap;
   }
   #socials {
@@ -57,5 +57,24 @@ nav {
     font-size: 90px;
     font-family: $title;
     letter-spacing: 7px;
+  }
+}
+
+.logo {
+  background-image: url(../images/logo.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#left2 {
+  a {
+    color: #505050;
+  }
+  .logo2 {
+    @extend .logo;
+    background-image: url(../images/logogrey.png);
+
   }
 }

@@ -59,7 +59,7 @@ body {
   letter-spacing: 2px;
   overflow-x: hidden; }
 
-.logo {
+.logo, #left2 .logo2 {
   background-image: url(../images/logo.png);
   width: 40px;
   height: 40px;
@@ -70,7 +70,6 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 10vh;
-  color: white;
   flex-wrap: wrap; }
 
 @media only screen and (max-width: 500px) {
@@ -105,6 +104,18 @@ ul {
     font-size: 90px;
     font-family: Playfair Display;
     letter-spacing: 7px; }
+
+.logo, #left2 .logo2 {
+  background-image: url(../images/logo.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+#left2 a {
+  color: #505050; }
+#left2 .logo2 {
+  background-image: url(../images/logogrey.png); }
 
 img {
   width: 500px; }
