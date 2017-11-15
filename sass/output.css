@@ -120,6 +120,15 @@ ul {
 
 #left2 a {
   color: #505050; }
+@media only screen and (max-width: 500px) {
+  #left2 li:nth-of-type(2) {
+    margin-top: -150px; }
+  #left2 li:nth-of-type(3) {
+    margin-top: -150px; }
+  #left2 li:nth-of-type(4) {
+    margin-top: -150px; }
+  #left2 li:nth-of-type(5) {
+    margin-top: -150px; } }
 #left2 .logo2 {
   background-image: url(../images/logogrey.png); }
 
