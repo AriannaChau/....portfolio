@@ -151,6 +151,22 @@ img {
     @media only screen and (max-width: 500px) {
       .about .test {
         width: 90%; } }
+    .about .test #resumebutton {
+      width: 120px;
+      height: 50px;
+      border: none;
+      background-color: #37422C;
+      color: white;
+      margin: 0 auto;
+      letter-spacing: 2.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s all ease-in-out;
+      font-size: 12px; }
+      .about .test #resumebutton:hover {
+        background-color: #C4CEA7;
+        color: #505050; }
     .about .test h1 {
       margin-bottom: 35px;
       color: #505050; }
