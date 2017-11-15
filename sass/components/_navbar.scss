@@ -15,7 +15,6 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 10vh;
-  // color: #505050;
   flex-wrap: wrap;
   }
   #socials {
@@ -51,7 +50,13 @@ nav {
   height: 70vh;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  p {
+    color: white;
+    line-height: 40px;
+  }
+  span {
+    color: white;
+  }
 
   #name {
     font-size: 90px;
@@ -70,7 +75,7 @@ nav {
 
 #left2 {
   a {
-    color: #505050;
+    color: $maingrey;
   }
   .logo2 {
     @extend .logo;

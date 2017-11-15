@@ -1,0 +1,37 @@
+.description {
+  width: 45%;
+  margin: 50px 0 0 50px;
+  a {
+    color: #C4CEA7;
+  }
+  @include tabletBreakpoint {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  p {
+    margin: 15px 0 0 20px;
+  }
+}
+
+.otherstuff {
+  display: flex;
+  // border: 1px solid blue;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+  img {
+    height: auto;
+    height: 500px;
+  }
+}
+
+#fernid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
